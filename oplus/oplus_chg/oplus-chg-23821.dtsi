@@ -404,8 +404,15 @@
 					OPLUS_IC_FUNC_GAUGE_SET_LAST_CC
 					OPLUS_IC_FUNC_GAUGE_GET_LAST_CC
 					OPLUS_IC_FUNC_GAUGE_GET_REAL_TIME_CURR
+					OPLUS_IC_FUNC_GAUGE_GET_DEC_FG_TYPE
+					OPLUS_IC_FUNC_GAUGE_GET_DEC_CV_SOH
+					OPLUS_IC_FUNC_GAUGE_SET_VCT
+					OPLUS_IC_FUNC_GAUGE_GET_VCT
 					OPLUS_IC_FUNC_GAUGE_GET_GAUGE_R_INFO
 					OPLUS_IC_FUNC_GAUGE_GET_BATT_SOC_CENTI
+					OPLUS_IC_FUNC_GAUGE_FCC_VDELTA_CHECK
+					OPLUS_IC_FUNC_GAUGE_FFC_T_RA_CHECK
+					OPLUS_IC_FUNC_GAUGE_FFC_RA0_CHECK
 				>;
 				virqs = <
 					OPLUS_IC_VIRQ_ERR
@@ -688,6 +695,10 @@
 		oplus_spec,ffc-temp-thr = <120 210 350 440>;
 		oplus_spec,wired-ffc-step-max = <2>;
 		oplus_spec,wired-ffc-fv-mv = <4590 4590>;
+		oplus_spec,bdd-vbatdiff-mv = <50>;
+		oplus_spec,bdd-enter-current-ma = <100>;
+		oplus_spec,bdd-enter-voltage-mv = <200>;
+		oplus_spec,bdd-vbatdiff-timeout-min = <10080>;
 
 		oplus_spec,wired-ffc-fv-cutoff-mv = <4545 4515 4500
 						     4515 4505 4490>;
@@ -749,9 +760,12 @@
 		smooth_strategy {
 			oplus_spec,reserve_table_centipercent =
 				/* start(%) end(%) dischg_reserve(0.01%) full_reserve(0.01%) chg_reserve(0.01%) chg_split(%) */
-				<0   20  0   0   200 100>,
-				<21  99  200 0   200 100>,
-				<100 100 200 0   200 100>;
+				<0   20  0   0   (-200) 90>,
+				<21  80  200 0   (-200) 90>,
+				<81  84  200 0   (-100) 90>,
+				<85  99  200 0   200    100>,
+				<100 100 200 0   200    100>;
+			oplus,enable_secondary_smooth_map_update;
 		};
 	};
 
@@ -1073,6 +1087,9 @@
 		oplus,ufcs_ic = <&oplus_virtual_platufcs>;
 		oplus,cp_ic = <&oplus_ufcs_virtual_cp>;
 		oplus,dpdm_switch_ic = <&oplus_adsp_dpdm_switch>;
+
+		oplus,curr_max_ma_percent = <3500 /* 75% ibus */
+					     2000 /* 85% ibus */>;
 
 		oplus,adsp_ufcs_project;
 		oplus,ufcs_boot_time_retry = <10>;

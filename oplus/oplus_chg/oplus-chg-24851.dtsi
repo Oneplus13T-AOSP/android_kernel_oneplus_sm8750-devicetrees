@@ -100,7 +100,7 @@
 		deep_spec,support;
 		deep_spec,uv_thr = <2750>;
 		deep_spec,count_thr = <50>;
-		deep_spec,vbat_soc = <20>;
+		deep_spec,vbat_soc = <80>;
 		deep_spec,count_step = <0 10 0
 					350 12 1
 					450 15 2
@@ -122,14 +122,14 @@
 		deep_spec,ddbc_curve {
 			oplus,temp_type = <OPLUS_STRATEGY_USE_BATT_TEMP>;
 			oplus,temp_range = <(-100) 0 200>;
-			deep_spec,ddbc_temp_cold = <500 3310 5
-						   10000 3260 2>;
-			deep_spec,ddbc_temp_cool = <500 3310 5
-						   10000 3260 2>;
-			deep_spec,ddbc_temp_normal = <500 3310 5
-						   10000 3260 2>;
-			deep_spec,ddbc_temp_warm = <500 3310 5
-						   10000 3260 2>;
+			deep_spec,ddbc_temp_cold = <500 3250 5
+						   10000 3200 2>;
+			deep_spec,ddbc_temp_cool = <500 3250 5
+						   10000 3200 2>;
+			deep_spec,ddbc_temp_normal = <500 3250 5
+						   10000 3200 2>;
+			deep_spec,ddbc_temp_warm = <500 3250 5
+						   10000 3200 2>;
 		};
 		ddrc_strategy {
 			oplus,temp_type = <OPLUS_STRATEGY_USE_BATT_TEMP>;
@@ -600,22 +600,22 @@
 		compatible = "oplus,wired";
 
 		oplus,vooc-support;
-
+		oplus,qc-curr-check-support;
 		oplus_spec,vbatt_pdqc_to_5v_thr = <5100>;
 		oplus_spec,vbatt_pdqc_to_9v_thr = <5000>;
 		oplus_spec,pd-iclmax-ma = <2000>;
 		oplus_spec,qc-iclmax-ma = <2000>;
 		oplus_spec,non-standard-ibatmax-ma = <500>;
 		oplus_spec,input-power-mw = <
-			2250		/* OPLUS_WIRED_CHG_MODE_UNKNOWN */
-			2250		/* OPLUS_WIRED_CHG_MODE_SDP */
+			2500		/* OPLUS_WIRED_CHG_MODE_UNKNOWN */
+			2500		/* OPLUS_WIRED_CHG_MODE_SDP */
 			7500		/* OPLUS_WIRED_CHG_MODE_CDP */
 			10000		/* OPLUS_WIRED_CHG_MODE_DCP */
 			15000		/* OPLUS_WIRED_CHG_MODE_VOOC */
 			18000		/* OPLUS_WIRED_CHG_MODE_QC */
 			18000		/* OPLUS_WIRED_CHG_MODE_PD */
 		>;
-		oplus_spec,led_on-fccmax-ma = <0 722 2170 3300 3300 3300 3300 1000 0>;
+		oplus_spec,led_on-fccmax-ma = <0 722 2170 3618 4400 4400 4400 1000 0>;
 		oplus_spec,fccmax-ma-lv = <
 			0 521 2200 2200 2200 2200 2200 2200 0	/* OPLUS_WIRED_CHG_MODE_UNKNOWN */
 			0 600  600  600  600  600  600  600 0	/* OPLUS_WIRED_CHG_MODE_SDP */
@@ -670,7 +670,7 @@
 		oplus_spec,non-standard-hw-fv-inc-mv = <18>;
 		oplus_spec,non-standard-sw-over-fv-mv = <3990>;
 		oplus_spec,non-standard-vbatdet-mv = <3680>;
-		oplus_spec,wired-vbatdet-mv = <0 4220 4319 4420 4420 4420 4400 4030 0>;
+		oplus_spec,wired-vbatdet-mv = <0 4220 4320 4420 4420 4420 4400 4030 0>;
 		oplus_spec,fcc-gear-thr-mv = <3980>;
 		oplus_spec,fcc-gear-shake-mv = <400 400 400 300 300 180 180 180 180>;
 		oplus_spec,vbatt-ov-thr-mv = <4600>;
@@ -1141,7 +1141,7 @@
 		oplus_spec,vooc_normal_low_temp = <350>;
 		oplus_spec,vooc_strategy_normal_current = <100>;
 		oplus_spec,vooc_normal_to_little_cool_current = <100>;
-		oplus_spec,vooc_over_high_temp = <500>;
+		oplus_spec,vooc_over_high_temp = <510>;
 		oplus_spec,vooc_low_temp = <50>;
 		oplus_spec,vooc_high_temp = <500>;
 		oplus_spec,vooc_low_soc = <0>;
@@ -1720,6 +1720,8 @@
 
 		oplus,target_vbus_mv = <11000>;
 		oplus,curr_max_ma = <10950>;
+		oplus,curr_max_ma_percent = <3500 /* 75% ibus */
+					    2000 /* 85% ibus */>;
 		oplus,subboard_ntc_abnormal_current = <7300>;
 		oplus,ufcs_warm_allow_vol = <4000>;
 		oplus,ufcs_warm_allow_soc = <55>;
@@ -2413,6 +2415,7 @@
 	oplus_chg_plc: oplus,plc_charge {
 		compatible = "oplus,plc_charge";
 		oplus,plc_soc = <90>;
+		oplus,plc_support_timeout;
 		oplus,plc_strategy-data = <&buck_simple_strategy>;
 		oplus,plc_strategy-names = "default";
 

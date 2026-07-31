@@ -267,13 +267,9 @@
 
 	oplus_chg_comm: oplus,comm {
 		compatible = "oplus,common-charge";
-		oplus_spec,dec-vol-cc-thr = <0 400 800>;
-		oplus_spec,dec-vol-fv-mv = <0  0  0  0  0  0  0  0  0
-					    20 20 20 20 20 20 20 0  0
-					    40 40 40 40 40 40 20 0  0>;
-		oplus_spec,dec-vol-wired-ffc-mv = <0  0  0
-						   20 20 20
-						   40 40 20>;
+		oplus_spec,dec_step = <20>;
+		oplus_spec,dec-vol-cc-full-thr = <0 400 600 800 1000 1200>;
+		oplus_spec,dec-vol-fv-full-mv = <0 20 20 40 40 40>;
 		oplus_spec,batt-them-thr = <(-100) 0 50 120 160 350 450 530>;
 		oplus_spec,removed_bat_decidegc = <390>; /*-39 degree*/
 		oplus_spec,iterm-ma = <597>; /* 2220*0.05+10 */
@@ -315,6 +311,8 @@
 		oplus,gauge_stuck_time = <50>;
 		oplus,smooth_switch;
 		oplus,reserve_chg_soc = <1>;
+
+		oplus_spec,batt_full_time = <300>;
 	};
 
 	oplus_monitor: oplus,monitor {
@@ -1011,6 +1009,7 @@
 	oplus_chg_plc: oplus,plc_charge {
 		compatible = "oplus,plc_charge";
 		oplus,plc_soc = <90>;
+		oplus,plc_support_timeout;
 		oplus,plc_strategy-data = <&buck_simple_strategy>;
 		oplus,plc_strategy-names = "default";
 
