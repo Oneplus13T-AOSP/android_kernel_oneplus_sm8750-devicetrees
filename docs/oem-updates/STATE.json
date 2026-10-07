@@ -1,0 +1,121 @@
+{
+  "product": "OnePlus 13T",
+  "model": "PKX110",
+  "region": "CN01",
+  "firmware": "PKX110_16.0.10.500(CN01)",
+  "source_repository": "https://github.com/OnePlusOSS/android_kernel_modules_and_devicetree_oneplus_sm8750",
+  "source_branch": "oneplus/sm8750_b_16.0.0_oneplus_13t",
+  "next_old_oem": "6a196f79f77acd55cf302e1696c038e4cad99254",
+  "reference_delta_old_oem": "183af72c25c18826f563070e96f5529ba0c56afa",
+  "reference_import": "22827657e4bad2abd1a24043b31d4d14fa1e2cc4",
+  "custom_base": "2f46fad8ad309266de2405666016f8e0679883d5",
+  "source_import_commit": "287bb8e068eb9cec358a157e56ae58e80daa1584",
+  "target_branch": "lineage-24.0",
+  "scope": [
+    {
+      "oem": "kernel_platform/qcom/opensource/devicetree/oplus/",
+      "custom": "oplus/",
+      "policy": "merge OEM deltas; preserve exceptions"
+    },
+    {
+      "oem": "vendor/qcom/opensource/audio-devicetree/oplus/",
+      "custom": "qcom/audio/oplus/",
+      "policy": "merge OEM deltas; preserve exceptions"
+    },
+    {
+      "oem": "vendor/qcom/opensource/camera-devicetree/oplus/",
+      "custom": "qcom/camera/oplus/",
+      "policy": "merge OEM deltas; preserve exceptions"
+    },
+    {
+      "oem": "vendor/qcom/opensource/display-devicetree/oplus/",
+      "custom": "qcom/display/oplus/",
+      "policy": "merge OEM deltas; preserve exceptions"
+    },
+    {
+      "oem": "vendor/qcom/opensource/display-devicetree/display/",
+      "custom": "qcom/display/display/",
+      "policy": "select OEM panels/dependencies only"
+    },
+    {
+      "oem": "vendor/qcom/opensource/wlan/wlan-devicetree/oplus/",
+      "custom": "qcom/wlan/oplus/",
+      "policy": "merge OEM deltas; preserve exceptions"
+    }
+  ],
+  "generic_reviewed": [
+    "qcom/sun-debug.dtsi",
+    "qcom/sun-pcie.dtsi",
+    "qcom/sun-pmic-overlay.dtsi",
+    "qcom/sun.dtsi"
+  ],
+  "extra_dependencies": [
+    "qcom/tuna-cdp-overlay-vw.dts",
+    "qcom/tuna-pmiv0108-overlay-vw.dtsi"
+  ],
+  "preserved": [
+    "oplus/Makefile",
+    "oplus/platform_map.bzl",
+    "qcom/Makefile",
+    "qcom/camera/config/sun.mk",
+    "oplus/sun_overlay_common.dtsi",
+    "qcom/display/oplus/panel/dsi-panel-AA590-P-3-A0020-dsc-cmd.dtsi",
+    "qcom/kera.dtsi",
+    "qcom/parrot.dtsi",
+    "qcom/pineapple.dtsi",
+    "qcom/ravelin.dtsi",
+    "qcom/sun-debug.dtsi",
+    "qcom/sun-pcie.dtsi",
+    "qcom/sun-pmic-overlay.dtsi",
+    "qcom/wlan/oplus/dodge_sun-peach-cnss-v8-overlay.dtsi",
+    "qcom/wlan/oplus/hummer_sun-peach-cnss-v8-overlay.dtsi",
+    "qcom/wlan/oplus/pagani_sun-peach-cnss-v8-overlay.dtsi",
+    "qcom/display/Kbuild",
+    "qcom/dsp/Kbuild",
+    "qcom/video/Kbuild",
+    "qcom/graphics/Kbuild",
+    "qcom/mmrm/Kbuild",
+    "qcom/mm/Kbuild",
+    "qcom/wlan/Kbuild",
+    "qcom/synx/Kbuild",
+    "qcom/bt/Kbuild",
+    "qcom/data/Kbuild",
+    "qcom/eva/Kbuild",
+    "qcom/fingerprint/Kbuild",
+    "qcom/nfc/Kbuild",
+    "qcom/audio/Kbuild",
+    "qcom/eSE/Kbuild",
+    "qcom/camera/Kbuild"
+  ],
+  "pending": [
+    {
+      "item": "Volkswagen build and packaging enablement",
+      "paths": [
+        "oplus/Makefile",
+        "oplus/platform_map.bzl",
+        "qcom/audio/Kbuild",
+        "qcom/camera/config/sun.mk",
+        "qcom/display/Kbuild",
+        "qcom/wlan/Kbuild"
+      ],
+      "basis": "6a196f79f77acd55cf302e1696c038e4cad99254",
+      "reason": "Source-only synchronization; board selection, subsystem registration and packaging need a separate device-support task."
+    },
+    {
+      "item": "Generic QCOM/display differences",
+      "basis": "6a196f79f77acd55cf302e1696c038e4cad99254",
+      "reason": "Selective import, not full OEM equality; compare custom against OEM as well as next OLD-to-NEW."
+    },
+    {
+      "item": "Kernel/module/firmware compatibility",
+      "basis": "6a196f79f77acd55cf302e1696c038e4cad99254",
+      "reason": "OEM consumers inspected; active ROM driver baseline and firmware not supplied. No driver import in this repository."
+    },
+    {
+      "item": "Full DTB/DTBO build, final composition, packaging, hardware",
+      "basis": "6a196f79f77acd55cf302e1696c038e4cad99254",
+      "reason": "Kernel build environment, SM8750 headers, ROM packaging setup and test device unavailable."
+    }
+  ],
+  "validation_status": "source integration complete; partial standalone syntax checks; full ROM/hardware unverified"
+}

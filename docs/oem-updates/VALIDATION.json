@@ -1,0 +1,823 @@
+{
+  "source_checks": {
+    "changed_files": 81,
+    "modified": 48,
+    "added": 33,
+    "mode_changes": [],
+    "new_quoted_includes": [
+      [
+        "oplus/hummer-24811-sun-overlay.dts",
+        "mm/hummer-24811-sun-mm.dtsi",
+        true
+      ],
+      [
+        "oplus/ktm-24851-sun-overlay-gauge-mpc.dts",
+        "mm/ktm-24851-sun-mm.dtsi",
+        true
+      ],
+      [
+        "oplus/ktm-24851-sun-overlay-gauge-ti-dvt2.dts",
+        "mm/ktm-24851-sun-mm.dtsi",
+        true
+      ],
+      [
+        "oplus/ktm-24851-sun-overlay-gauge-ti.dts",
+        "mm/ktm-24851-sun-mm.dtsi",
+        true
+      ],
+      [
+        "oplus/oplus_chg/vw/oplus-chg-24816.dtsi",
+        "oplus-chg-vw-cn-in-curve.dtsi",
+        true
+      ],
+      [
+        "oplus/oplus_chg/vw/oplus-chg-24816.dtsi",
+        "oplus-chg-vw-ufcs.dtsi",
+        true
+      ],
+      [
+        "oplus/oplus_chg/vw/oplus-chg-24885-EU.dtsi",
+        "oplus-chg-vw-gpio-switch.dtsi",
+        true
+      ],
+      [
+        "oplus/oplus_chg/vw/oplus-chg-24885-IN-T0.dtsi",
+        "oplus-chg-vw-cn-in-curve.dtsi",
+        true
+      ],
+      [
+        "oplus/oplus_chg/vw/oplus-chg-24885-IN-T0.dtsi",
+        "oplus-chg-vw-gpio-switch.dtsi",
+        true
+      ],
+      [
+        "oplus/oplus_chg/vw/oplus-chg-24885-IN.dtsi",
+        "oplus-chg-vw-cn-in-curve.dtsi",
+        true
+      ],
+      [
+        "oplus/oplus_chg/vw/oplus-chg-24885-IN.dtsi",
+        "oplus-chg-vw-gpio-switch.dtsi",
+        true
+      ],
+      [
+        "oplus/oplus_chg/vw/oplus-chg-vw-ufcs.dtsi",
+        "../oplus-chg-8750.h.dtsi",
+        true
+      ],
+      [
+        "oplus/pagani-24821-sun-overlay.dts",
+        "mm/pagani-24821-sun-mm.dtsi",
+        true
+      ],
+      [
+        "oplus/pagani-24875-sun-overlay.dts",
+        "mm/pagani-24875-sun-mm.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24816-sun-overlay.dts",
+        "oplus_misc/oplus-misc-24816.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24816-sun-overlay.dts",
+        "sensor/vw-sensor-24816-24885.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24816-sun-overlay.dts",
+        "oplus_chg/vw/oplus-chg-24816.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24816-sun-overlay.dts",
+        "volkswagen_overlay_common.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24816-sun-overlay.dts",
+        "../qcom/tuna-cdp-overlay-vw.dts",
+        true
+      ],
+      [
+        "oplus/volkswagen-24816-sun-overlay.dts",
+        "oplus_uff/oplus_uff_24816.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24816-sun-overlay.dts",
+        "mm/volkswagen-24816-mm.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24816-sun-overlay.dts",
+        "oplus_nfc/volkswagen_nfc_thn31.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24816-sun-overlay.dts",
+        "tuna_overlay_common.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24816-sun-overlay.dts",
+        "tp/vw-oplus-tp-24816.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-EU.dts",
+        "oplus_misc/oplus-misc-24885-EU.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-EU.dts",
+        "sensor/vw-sensor-24816-24885.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-EU.dts",
+        "oplus_chg/vw/oplus-chg-24885-EU.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-EU.dts",
+        "volkswagen_overlay_common.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-EU.dts",
+        "../qcom/tuna-cdp-overlay-vw.dts",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-EU.dts",
+        "oplus_uff/oplus_uff_24816.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-EU.dts",
+        "tp/vw-oplus-tp-24816.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-EU.dts",
+        "mm/volkswagen-24885-mm.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-EU.dts",
+        "tuna_overlay_common.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-EU.dts",
+        "region-id.h.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-EU.dts",
+        "oplus_nfc/volkswagen_nfc_pn560.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN-T0.dts",
+        "oplus_chg/vw/oplus-chg-24885-IN-T0.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN-T0.dts",
+        "sensor/vw-sensor-24816-24885.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN-T0.dts",
+        "volkswagen_overlay_common.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN-T0.dts",
+        "../qcom/tuna-cdp-overlay-vw.dts",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN-T0.dts",
+        "oplus_uff/oplus_uff_24816.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN-T0.dts",
+        "oplus_misc/oplus-misc-24885-IN-T0.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN-T0.dts",
+        "tp/vw-oplus-tp-24816.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN-T0.dts",
+        "mm/volkswagen-24885-mm.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN-T0.dts",
+        "tuna_overlay_common.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN-T0.dts",
+        "region-id.h.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN-T0.dts",
+        "oplus_nfc/volkswagen_nfc_pn560.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN.dts",
+        "sensor/vw-sensor-24816-24885.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN.dts",
+        "volkswagen_overlay_common.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN.dts",
+        "../qcom/tuna-cdp-overlay-vw.dts",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN.dts",
+        "oplus_uff/oplus_uff_24816.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN.dts",
+        "tp/vw-oplus-tp-24816.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN.dts",
+        "oplus_misc/oplus-misc-24885-IN.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN.dts",
+        "mm/volkswagen-24885-mm.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN.dts",
+        "tuna_overlay_common.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN.dts",
+        "oplus_chg/vw/oplus-chg-24885-IN.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN.dts",
+        "region-id.h.dtsi",
+        true
+      ],
+      [
+        "oplus/volkswagen-24885-sun-overlay-IN.dts",
+        "oplus_nfc/volkswagen_nfc_pn560.dtsi",
+        true
+      ],
+      [
+        "qcom/audio/oplus/volkswagen-24816-audio-tuna-overlay.dts",
+        "../tuna-audio-mtp.dts",
+        true
+      ],
+      [
+        "qcom/audio/oplus/volkswagen-24816-audio-tuna-overlay.dts",
+        "volkswagen-24816-audio-tuna-overlay.dtsi",
+        true
+      ],
+      [
+        "qcom/audio/oplus/volkswagen-24816-audio-tuna-overlay.dts",
+        "tuna-audio-overlay-common.dtsi",
+        true
+      ],
+      [
+        "qcom/audio/oplus/volkswagen-24885-audio-tuna-overlay.dts",
+        "volkswagen-24885-audio-tuna-overlay.dtsi",
+        true
+      ],
+      [
+        "qcom/audio/oplus/volkswagen-24885-audio-tuna-overlay.dts",
+        "../tuna-audio-mtp.dts",
+        true
+      ],
+      [
+        "qcom/audio/oplus/volkswagen-24885-audio-tuna-overlay.dts",
+        "tuna-audio-overlay-common.dtsi",
+        true
+      ],
+      [
+        "qcom/camera/oplus/vw-camera-overlay-evb.dts",
+        "../tuna-camera.dtsi",
+        true
+      ],
+      [
+        "qcom/camera/oplus/vw-camera-overlay-evb.dts",
+        "vw_camera_overlay_common_evb.dtsi",
+        true
+      ],
+      [
+        "qcom/camera/oplus/vwIn-camera-overlay-evb.dts",
+        "vwIn_camera_overlay_common_evb.dtsi",
+        true
+      ],
+      [
+        "qcom/camera/oplus/vwIn-camera-overlay-evb.dts",
+        "../tuna-camera.dtsi",
+        true
+      ],
+      [
+        "qcom/camera/oplus/vwIn_camera_overlay_common_evb.dtsi",
+        "regulator/aw37004.dtsi",
+        true
+      ],
+      [
+        "qcom/camera/oplus/vwIn_camera_overlay_common_evb.dtsi",
+        "ftm_camera_settings.dtsi",
+        true
+      ],
+      [
+        "qcom/camera/oplus/vw_camera_overlay_common_evb.dtsi",
+        "regulator/aw37004.dtsi",
+        true
+      ],
+      [
+        "qcom/camera/oplus/vw_camera_overlay_common_evb.dtsi",
+        "ftm_camera_settings.dtsi",
+        true
+      ],
+      [
+        "qcom/tuna-cdp-overlay-vw.dts",
+        "tuna-cdp.dtsi",
+        true
+      ],
+      [
+        "qcom/tuna-cdp-overlay-vw.dts",
+        "tuna-pmiv0108-overlay-vw.dtsi",
+        true
+      ],
+      [
+        "qcom/tuna-pmiv0108-overlay-vw.dtsi",
+        "pmiv010x.dtsi",
+        true
+      ],
+      [
+        "qcom/wlan/oplus/vw_tuna-mtp-wcn7750-overlay.dts",
+        "vw_tuna-mtp-wcn7750-overlay.dtsi",
+        true
+      ],
+      [
+        "qcom/wlan/oplus/vw_tuna-mtp-wcn7750-overlay.dtsi",
+        "../tuna-mtp-wcn7750.dts",
+        true
+      ]
+    ],
+    "protected_files": [
+      "oplus/Makefile",
+      "oplus/platform_map.bzl",
+      "qcom/Makefile",
+      "qcom/camera/config/sun.mk",
+      "oplus/sun_overlay_common.dtsi",
+      "qcom/display/oplus/panel/dsi-panel-AA590-P-3-A0020-dsc-cmd.dtsi",
+      "qcom/kera.dtsi",
+      "qcom/parrot.dtsi",
+      "qcom/pineapple.dtsi",
+      "qcom/ravelin.dtsi",
+      "qcom/sun-debug.dtsi",
+      "qcom/sun-pcie.dtsi",
+      "qcom/sun-pmic-overlay.dtsi",
+      "qcom/wlan/oplus/dodge_sun-peach-cnss-v8-overlay.dtsi",
+      "qcom/wlan/oplus/hummer_sun-peach-cnss-v8-overlay.dtsi",
+      "qcom/wlan/oplus/pagani_sun-peach-cnss-v8-overlay.dtsi",
+      "qcom/display/Kbuild",
+      "qcom/dsp/Kbuild",
+      "qcom/video/Kbuild",
+      "qcom/graphics/Kbuild",
+      "qcom/mmrm/Kbuild",
+      "qcom/mm/Kbuild",
+      "qcom/wlan/Kbuild",
+      "qcom/synx/Kbuild",
+      "qcom/bt/Kbuild",
+      "qcom/data/Kbuild",
+      "qcom/eva/Kbuild",
+      "qcom/fingerprint/Kbuild",
+      "qcom/nfc/Kbuild",
+      "qcom/audio/Kbuild",
+      "qcom/eSE/Kbuild",
+      "qcom/camera/Kbuild"
+    ],
+    "oem_exceptions": [
+      "oplus/Makefile",
+      "oplus/platform_map.bzl",
+      "oplus/sun_overlay_common.dtsi",
+      "qcom/sun.dtsi",
+      "qcom/display/oplus/panel/dsi-panel-AA590-P-3-A0020-dsc-cmd.dtsi",
+      "qcom/wlan/oplus/hummer_sun-peach-cnss-v8-overlay.dtsi",
+      "qcom/wlan/oplus/pagani_sun-peach-cnss-v8-overlay.dtsi"
+    ],
+    "counts": {
+      "('oplus', False)": 3,
+      "('oplus', True)": 117,
+      "('qcom/sun-debug.dtsi', True)": 1,
+      "('qcom/sun-pcie.dtsi', True)": 1,
+      "('qcom/sun-pmic-overlay.dtsi', True)": 1,
+      "('qcom/sun.dtsi', False)": 1,
+      "('qcom/audio/oplus', True)": 19,
+      "('qcom/camera/oplus', True)": 25,
+      "('qcom/display/display', True)": 7,
+      "('qcom/display/oplus', True)": 42,
+      "('qcom/display/oplus', False)": 1,
+      "('qcom/wlan/oplus', True)": 8,
+      "('qcom/wlan/oplus', False)": 2
+    }
+  },
+  "build_lists": {
+    "builds": [
+      {
+        "config": "DODGE",
+        "outputs": [
+          "dodge-23821-sun-overlay.dtbo",
+          "dodge-23821-sun-overlay-T0.dtbo",
+          "dodge-23893-sun-overlay.dtbo",
+          "dodge-23893-sun-overlay-T0.dtbo",
+          "../qcom/sun.dtb",
+          "../qcom/sun-v2.dtb",
+          "../qcom/sunp.dtb",
+          "../qcom/sunp-v2.dtb",
+          "../qcom/sun-tp.dtb",
+          "../qcom/sun-tp-v2.dtb",
+          "../qcom/sunp-tp.dtb",
+          "../qcom/sunp-tp-v2.dtb",
+          "../qcom/tuna.dtb",
+          "../qcom/tuna7.dtb",
+          "../qcom/tunap.dtb",
+          "../qcom/kera.dtb",
+          "../qcom/kerap.dtb"
+        ]
+      },
+      {
+        "config": "ERHAI",
+        "outputs": [
+          "erhai-24924-sun-overlay.dtbo",
+          "erhai-24924-sun-overlay-DVT.dtbo",
+          "erhai-24926-sun-overlay.dtbo",
+          "erhai-24926-sun-overlay-DVT.dtbo",
+          "erhai-24976-sun-overlay.dtbo",
+          "erhai-24976-sun-overlay-DVT.dtbo",
+          "erhai-24976-eu-sun-overlay.dtbo",
+          "erhai-24976-eu-sun-overlay-DVT.dtbo",
+          "erhai-24974-sun-overlay.dtbo",
+          "erhai-24974-eu-sun-overlay.dtbo",
+          "../qcom/sun.dtb",
+          "../qcom/sun-v2.dtb",
+          "../qcom/sunp.dtb",
+          "../qcom/sunp-v2.dtb",
+          "../qcom/sun-tp.dtb",
+          "../qcom/sun-tp-v2.dtb",
+          "../qcom/sunp-tp.dtb",
+          "../qcom/sunp-tp-v2.dtb",
+          "../qcom/tuna.dtb",
+          "../qcom/tuna7.dtb",
+          "../qcom/tunap.dtb",
+          "../qcom/kera.dtb",
+          "../qcom/kerap.dtb"
+        ]
+      },
+      {
+        "config": "HUMMER",
+        "outputs": [
+          "hummer-24811-sun-overlay.dtbo",
+          "../qcom/sun.dtb",
+          "../qcom/sun-v2.dtb",
+          "../qcom/sunp.dtb",
+          "../qcom/sunp-v2.dtb",
+          "../qcom/sun-tp.dtb",
+          "../qcom/sun-tp-v2.dtb",
+          "../qcom/sunp-tp.dtb",
+          "../qcom/sunp-tp-v2.dtb",
+          "../qcom/tuna.dtb",
+          "../qcom/tuna7.dtb",
+          "../qcom/tunap.dtb",
+          "../qcom/kera.dtb",
+          "../qcom/kerap.dtb"
+        ]
+      },
+      {
+        "config": "PAGANI",
+        "outputs": [
+          "pagani-24821-sun-overlay.dtbo",
+          "pagani-24875-sun-overlay.dtbo",
+          "../qcom/sun.dtb",
+          "../qcom/sun-v2.dtb",
+          "../qcom/sunp.dtb",
+          "../qcom/sunp-v2.dtb",
+          "../qcom/sun-tp.dtb",
+          "../qcom/sun-tp-v2.dtb",
+          "../qcom/sunp-tp.dtb",
+          "../qcom/sunp-tp-v2.dtb",
+          "../qcom/tuna.dtb",
+          "../qcom/tuna7.dtb",
+          "../qcom/tunap.dtb",
+          "../qcom/kera.dtb",
+          "../qcom/kerap.dtb"
+        ]
+      },
+      {
+        "config": "PILOTI",
+        "outputs": [
+          "piloti-24620-sun-overlay.dtbo",
+          "../qcom/sun.dtb",
+          "../qcom/sun-v2.dtb",
+          "../qcom/sunp.dtb",
+          "../qcom/sunp-v2.dtb",
+          "../qcom/sun-tp.dtb",
+          "../qcom/sun-tp-v2.dtb",
+          "../qcom/sunp-tp.dtb",
+          "../qcom/sunp-tp-v2.dtb",
+          "../qcom/tuna.dtb",
+          "../qcom/tuna7.dtb",
+          "../qcom/tunap.dtb",
+          "../qcom/kera.dtb",
+          "../qcom/kerap.dtb"
+        ]
+      },
+      {
+        "config": "PISTA",
+        "outputs": [
+          "pista-24600-sun-overlay.dtbo",
+          "../qcom/sun.dtb",
+          "../qcom/sun-v2.dtb",
+          "../qcom/sunp.dtb",
+          "../qcom/sunp-v2.dtb",
+          "../qcom/sun-tp.dtb",
+          "../qcom/sun-tp-v2.dtb",
+          "../qcom/sunp-tp.dtb",
+          "../qcom/sunp-tp-v2.dtb",
+          "../qcom/tuna.dtb",
+          "../qcom/tuna7.dtb",
+          "../qcom/tunap.dtb",
+          "../qcom/kera.dtb",
+          "../qcom/kerap.dtb"
+        ]
+      },
+      {
+        "config": "KTM",
+        "outputs": [
+          "ktm-24851-sun-overlay-gauge-ti.dtbo",
+          "ktm-24851-sun-overlay-gauge-mpc.dtbo",
+          "ktm-24851-sun-overlay-gauge-ti-dvt2.dtbo",
+          "../qcom/sun.dtb",
+          "../qcom/sun-v2.dtb",
+          "../qcom/sunp.dtb",
+          "../qcom/sunp-v2.dtb",
+          "../qcom/sun-tp.dtb",
+          "../qcom/sun-tp-v2.dtb",
+          "../qcom/sunp-tp.dtb",
+          "../qcom/sunp-tp-v2.dtb",
+          "../qcom/tuna.dtb",
+          "../qcom/tuna7.dtb",
+          "../qcom/tunap.dtb",
+          "../qcom/kera.dtb",
+          "../qcom/kerap.dtb"
+        ]
+      },
+      {
+        "config": "audio",
+        "oplus_outputs": [
+          "oplus/dodge-23821-audio-sun-overlay.dtbo",
+          "oplus/hummer-24811-audio-sun-overlay.dtbo",
+          "oplus/erhai-24924-audio-sun-overlay.dtbo",
+          "oplus/erhai-24924-audio-sun-overlay-T0.dtbo",
+          "oplus/pagani-24821-audio-sun-overlay.dtbo",
+          "oplus/piloti-24620-audio-sun-overlay.dtbo",
+          "oplus/pista-24600-audio-sun-overlay.dtbo",
+          "oplus/ktm-24851-audio-sun-overlay.dtbo",
+          "oplus/ktm-24851-audio-sun-overlay-T0.dtbo"
+        ]
+      },
+      {
+        "config": "display",
+        "oplus_outputs": [
+          "oplus/dodge-23821-display-sun-overlay.dtbo",
+          "oplus/hummer-24811-display-sun-overlay.dtbo",
+          "oplus/erhai-24924-display-sun-overlay.dtbo",
+          "oplus/erhai-24926-display-sun-overlay.dtbo",
+          "oplus/pagani-24821-display-sun-overlay.dtbo",
+          "oplus/piloti-24620-display-sun-overlay.dtbo",
+          "oplus/pista-24600-display-sun-overlay.dtbo",
+          "oplus/ktm-24851-display-sun-overlay.dtbo"
+        ]
+      },
+      {
+        "config": "wlan",
+        "oplus_outputs": [
+          "oplus/dodge_sun-peach-cnss-v8-overlay.dtbo",
+          "oplus/hummer_sun-peach-cnss-v8-overlay.dtbo",
+          "oplus/pagani_sun-peach-cnss-v8-overlay.dtbo",
+          "oplus/ktm_sun-kiwi-cnss-v8-overlay.dtbo"
+        ]
+      },
+      {
+        "config": "camera",
+        "oplus_outputs": [
+          "oplus/dodge-camera-overlay-evb.dtbo",
+          "oplus/dodge-camera-overlay-T0.dtbo",
+          "oplus/dodge-camera-overlay-T1.dtbo",
+          "oplus/erhai-camera-overlay-evb.dtbo",
+          "oplus/hummer-camera-overlay-evb.dtbo",
+          "oplus/hummer-camera-overlay-T0.dtbo",
+          "oplus/pagani-camera-overlay-T0.dtbo",
+          "oplus/paganiIn-camera-overlay-T0.dtbo",
+          "oplus/piloti-camera-overlay-T0.dtbo",
+          "oplus/piloti-camera-overlay-evb.dtbo",
+          "oplus/pista-camera-overlay-evb.dtbo",
+          "oplus/pista-camera-overlay-T0.dtbo",
+          "oplus/ktm-camera-overlay-T0.dtbo"
+        ]
+      }
+    ],
+    "include_closure_files": 160,
+    "external_includes": [
+      "bindings/audio-codec-port-types.h",
+      "bindings/qcom,audio-ext-clk.h",
+      "bindings/qcom,lpass-cdc-clk-rsc.h",
+      "dt-bindings/arm/msm/qcom_dma_heap_dt_constants.h",
+      "dt-bindings/arm/msm/qti-smmu-proxy-dt-ids.h",
+      "dt-bindings/clock/qcom,aop-qmp.h",
+      "dt-bindings/clock/qcom,cambistmclkcc-sun.h",
+      "dt-bindings/clock/qcom,camcc-sun.h",
+      "dt-bindings/clock/qcom,dispcc-sun.h",
+      "dt-bindings/clock/qcom,evacc-sun.h",
+      "dt-bindings/clock/qcom,gcc-sun.h",
+      "dt-bindings/clock/qcom,gcc-tuna.h",
+      "dt-bindings/clock/qcom,gpucc-sun.h",
+      "dt-bindings/clock/qcom,gxclkctl-sun.h",
+      "dt-bindings/clock/qcom,rpmh.h",
+      "dt-bindings/clock/qcom,tcsrcc-sun.h",
+      "dt-bindings/clock/qcom,videocc-sun.h",
+      "dt-bindings/gpio/gpio.h",
+      "dt-bindings/iio/qcom,spmi-adc5-gen3-pm8550.h",
+      "dt-bindings/iio/qcom,spmi-adc5-gen3-pm8550b.h",
+      "dt-bindings/iio/qcom,spmi-adc5-gen3-pm8550vx.h",
+      "dt-bindings/iio/qcom,spmi-adc5-gen3-pmiv0104.h",
+      "dt-bindings/iio/qcom,spmi-adc5-gen3-pmk8550.h",
+      "dt-bindings/iio/qcom,spmi-adc5-gen4-pmih010x.h",
+      "dt-bindings/iio/qcom,spmi-vadc.h",
+      "dt-bindings/input/input.h",
+      "dt-bindings/input/qcom,hv-haptics.h",
+      "dt-bindings/interconnect/qcom,icc.h",
+      "dt-bindings/interconnect/qcom,sun.h",
+      "dt-bindings/interconnect/qcom,tuna.h",
+      "dt-bindings/interrupt-controller/arm-gic.h",
+      "dt-bindings/interrupt-controller/irq.h",
+      "dt-bindings/leds/common.h",
+      "dt-bindings/msm-camera.h",
+      "dt-bindings/oplus/hw-id.h",
+      "dt-bindings/phy/qcom,usb3-3nm-qmp-combo.h",
+      "dt-bindings/power/qcom-aoss-qmp.h",
+      "dt-bindings/regulator/qcom,rpmh-regulator-levels.h",
+      "dt-bindings/soc/qcom,dcc_v2.h",
+      "dt-bindings/soc/qcom,ipcc.h",
+      "dt-bindings/soc/qcom,rpmh-rsc.h",
+      "dt-bindings/spmi/spmi.h",
+      "dt-bindings/thermal/thermal_qti.h"
+    ],
+    "missing_quoted_includes": []
+  },
+  "fragment_checks": [
+    {
+      "path": "oplus/mm/dodge-23821-sun-mm.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 0
+    },
+    {
+      "path": "oplus/mm/hummer-24811-sun-mm.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 0
+    },
+    {
+      "path": "oplus/mm/ktm-24851-sun-mm.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 0
+    },
+    {
+      "path": "oplus/mm/pagani-24821-sun-mm.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 0
+    },
+    {
+      "path": "oplus/mm/pagani-24875-sun-mm.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 0
+    },
+    {
+      "path": "oplus/mm/volkswagen-24816-mm.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 0
+    },
+    {
+      "path": "oplus/mm/volkswagen-24885-mm.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 0
+    },
+    {
+      "path": "qcom/display/display/dsi-panel-AA610-P-3-A0034-dsc-vid.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 6
+    },
+    {
+      "path": "qcom/display/oplus/panel/dsi-panel-AA569-P-3-A0019-dsc-cmd-evb.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 4
+    },
+    {
+      "path": "qcom/display/oplus/panel/dsi-panel-AA569-P-3-A0019-dsc-cmd-evt.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 4
+    },
+    {
+      "path": "qcom/display/oplus/panel/dsi-panel-AA569-P-3-A0019-dsc-cmd.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 4
+    },
+    {
+      "path": "qcom/display/oplus/panel/dsi-panel-AA594-P-7-A0020-dsc-cmd-evt.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 4
+    },
+    {
+      "path": "qcom/display/oplus/panel/dsi-panel-AA594-P-7-A0020-dsc-cmd.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 4
+    },
+    {
+      "path": "qcom/display/oplus/panel/dsi-panel-AA605-P-7-A0020-dsc-cmd.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 5
+    },
+    {
+      "path": "qcom/display/oplus/panel/dsi-panel-AC140-P-1-A0002-dsc-cmd.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 3
+    },
+    {
+      "path": "qcom/display/oplus/panel/dsi-panel-AC140-S-3-A0014-dsc-cmd.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 3
+    },
+    {
+      "path": "qcom/display/oplus/panel/dsi-panel-AC218-P-3-A0019-dsc-cmd.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 4
+    },
+    {
+      "path": "oplus/oplus_chg/oplus-chg-24821.dtsi",
+      "stage": "dtc",
+      "returncode": 1,
+      "warnings": 0
+    },
+    {
+      "path": "oplus/oplus_chg/oplus-chg-24875.dtsi",
+      "stage": "dtc",
+      "returncode": 1,
+      "warnings": 0
+    },
+    {
+      "path": "qcom/camera/oplus/ftm_camera_settings.dtsi",
+      "stage": "dtc",
+      "returncode": 0,
+      "warnings": 0
+    }
+  ]
+}
