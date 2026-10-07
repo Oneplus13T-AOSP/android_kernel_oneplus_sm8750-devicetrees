@@ -99,7 +99,6 @@
 		bus,spi-mode = <0>;
 		bus,rx-dummy = <0>;
 		bus,tx-dummy = <0>;
-		spi-cs-setup = <50 0>;
 	};
 };
 /*

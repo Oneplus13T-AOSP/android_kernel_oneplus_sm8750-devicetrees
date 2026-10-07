@@ -1,4 +1,7 @@
 &oplus_mms_gauge {
+	oplus,fcl_support;
+	oplus,fcl_index = <1>;
+	oplus,vb_offset = <0>;
 	oplus,voocphy_ic = <&oplus_virtual_vphy>;
 	oplus_virtual_gauge: oplus,virtual_gauge {
 		compatible = "oplus,virtual_gauge";
@@ -47,6 +50,10 @@
 				OPLUS_IC_FUNC_GAUGE_GET_DOD0_PASSED_Q
 				OPLUS_IC_FUNC_GAUGE_GET_QMAX
 				OPLUS_IC_FUNC_GAUGE_GET_QMAX_PASSED_Q
+				OPLUS_IC_FUNC_GAUGE_GET_DEC_FG_TYPE
+				OPLUS_IC_FUNC_GAUGE_GET_DEC_CV_SOH
+				OPLUS_IC_FUNC_GAUGE_SET_VCT
+				OPLUS_IC_FUNC_GAUGE_GET_VCT
 			>;
 			virqs = <
 				OPLUS_IC_VIRQ_ERR
@@ -101,10 +108,6 @@
 		gpio-set-in-val = <0x19c3>;
 		gpio_level_high_val = <0x3>;
 		gpio_level_low_val = <0x0>;
-
-		write_begin_low_level_time = <600>;
-		write_relese_ic_time = <6>;
-		oplus,maxim_romid_crc_support;
 
 		oplus,batt_info = /bits/ 8 <0x36 0x31 0x31 0x33 0x30 0x37 0x30 0x30 0x30 0x30 0x34 0x32
 		                            0x36 0x31 0x31 0x33 0x30 0x37 0x30 0x30 0x30 0x30 0x35 0x31>;
